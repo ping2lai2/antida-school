@@ -49,7 +49,7 @@ Hello world! NodeJS RULES!
   * вернёт массив со строками вида: *“Bob - 18: 10”* используя метод `toString`, который предварительно добавлен в изначальный объект
   * вернёт массив чисел в виде строк, суммы очков участников, сгруппированных по возрасту.
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-2)**
 
 
 
@@ -57,7 +57,7 @@ Hello world! NodeJS RULES!
 
 Задание **[тут](https://docs.google.com/document/d/1teOurPKQMmLJi4RMWrM9FA035t4OoyVOIHLSKjsxH60/edit)**
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-3)**
 
 
 ## Урок 4
@@ -97,7 +97,7 @@ var test2 = Function(
 );
 ```
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-4)**
 
 
 
@@ -113,7 +113,7 @@ var test2 = Function(
 П.С. Проявите творческий подход, примените все возможности языка из урока.  
 П.П.С. Попробуйте пофантазировать и доработать классы через новые расширения, добавить свойства и методы, геттеры, сеттеры.
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-5)**
 
 
 
@@ -134,7 +134,7 @@ var getUser = async (user) => fetch(`//api.github.com/users/${user}`);
 ```
 **FYI**: это не та апишка из которой можно достать “всех” пользоватлей
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-6)**
 
 
 
@@ -142,15 +142,25 @@ var getUser = async (user) => fetch(`//api.github.com/users/${user}`);
 
 Написать свой `leftPad`, используя ES6
 
-**[→ решение ←]()**
+**→ решение ←**
+```javascript
+//NOTE: The third argument should be a single char
+// т.е. это не '', 'abc' и прочее
+
+const leftpad1 = (str, len, ch = ' ') => (len>(str+'').length 
+                                          ? ch.repeat(len-(str+'').length) 
+                                          : '') + str;
 
 
+//es2017
+const leftpad2 = (...args) => ''.padStart.call(...args); //¯\_(ツ)_/¯
+```
 
 ## Урок 8
 
 Попробуйте используя Webpack собрать проект на React (Hello World) с простейшим тестом на Jest или QUnit
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-8)**
 
 
 
@@ -158,7 +168,7 @@ var getUser = async (user) => fetch(`//api.github.com/users/${user}`);
 
 Попробовать воспользоваться динамическим импортом для разделения кода на бандлы (будет проще если сразу начать использовать пакет `react-loadable`) потребуется плагин для babel `@babel/plugin-syntax-dynamic-import`
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-9)**
 
 
 
@@ -167,4 +177,4 @@ var getUser = async (user) => fetch(`//api.github.com/users/${user}`);
 Исходник **[тут](https://github.com/loktevra/react-course-ru-v2)**  
 Нужно добавить к новостям “Лайки”
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-10)**
