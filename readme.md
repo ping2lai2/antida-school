@@ -30,7 +30,7 @@ Hello world! NodeJS RULES!
 Hello world! NodeJS RULES!
 ```
 
-**[→ решение ←]()**
+**[→ решение ←](/lesson-1)**
 
 
 
