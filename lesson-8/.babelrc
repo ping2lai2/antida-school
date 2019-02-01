@@ -1,0 +1,10 @@
+{
+  "presets": ["env", "react"],
+  "resolutions": { "babel-core": "^7.0.0-bridge" },
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    {
+      "loose": true
+    }
+  ]
+}
