@@ -139,8 +139,19 @@ var getUser = async (user) => fetch(`//api.github.com/users/${user}`);
 
 
 ## Урок 7
-
 Написать свой `leftPad`, используя ES6
+```javascript
+function leftpad (str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = ' ';
+  len = len - str.length;
+  while (++i < len) {
+    str = ch + str;
+  }
+  return str;
+}
+```
 
 **→ решение ←**
 ```javascript
@@ -155,6 +166,8 @@ const leftpad1 = (str, len, ch = ' ') => (len>(str+'').length
 //es2017
 const leftpad2 = (...args) => ''.padStart.call(...args); //¯\_(ツ)_/¯
 ```
+
+
 
 ## Урок 8
 
